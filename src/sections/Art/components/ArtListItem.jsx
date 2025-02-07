@@ -13,7 +13,7 @@ function ArtListItem({artwork}) {
     }, [artwork])
 
     return (
-        <ul>
+        <li>
             <div className="frame">
                 <img src={'https://boolean-uk-api-server.fly.dev/' + artwork.imageURL}></img>
             </div>
@@ -24,7 +24,7 @@ function ArtListItem({artwork}) {
                         {artwork.publicationHistory}
                     </ul>
                 )}
-        </ul>
+        </li>
     );
 }
 
