@@ -15,7 +15,7 @@ function ArtListItem({artwork}) {
     return (
         <ul>
             <div className="frame">
-                <img src={artwork.imageURL}></img>
+                <img src={'https://boolean-uk-api-server.fly.dev/' + artwork.imageURL}></img>
             </div>
             <h3>{artwork.title}</h3>
             <h4>{artwork.artist}</h4>
