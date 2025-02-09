@@ -17,9 +17,12 @@ function AdviceSection() {
   }, []);
 
   const saveToFavourites = () => {
-    if (adviceRandom && adviceRandom.slip) {
+    if (! adviceFavourite.includes(adviceRandom.slip)) {
+      if (adviceRandom && adviceRandom.slip) {
       setAdviceFavourite([...adviceFavourite, adviceRandom.slip]);
     }
+    }
+    
   };
 
   return (
