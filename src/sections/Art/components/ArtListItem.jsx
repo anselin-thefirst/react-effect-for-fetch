@@ -19,15 +19,11 @@ function ArtListItem({artwork}) {
             </div>
             <h3>{artwork.title}</h3>
             <h4>{artwork.artist}</h4>
-                {publications && (
+                {artwork.publicationHistory && (
                     <ul>
-                        {publications.length > 0 ? (
-                            publications.map((artwork, index) => (
-                                <li key={index}>{artwork.publicationHistory}</li>
-                            ))
-                        ) : (
-                            <p>no publications yet</p>
-                        )}
+                        {artwork.publicationHistory.map((publication, index) => (
+                            <li key={index}>{publication}</li>
+                        ))}
                     </ul>
                 )}
         </li>
