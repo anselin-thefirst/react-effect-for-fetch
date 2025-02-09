@@ -5,7 +5,6 @@ import './App.css'
 import { useState } from 'react'
 
 function App() {
-  // const [art, setArt] = useState([])
   return (
     <div className="main-layout">
       <ArtsSection />
